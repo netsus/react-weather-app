@@ -1,19 +1,69 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, StatusBar } from "react-native";
 import PropTypes from "prop-types";
+import { LinearGradient } from "expo-linear-gradient";
 import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
 
-export default function Weather({ temp }){
+const weatherOptions = {
+    Haze: {
+      iconName: "md-partly-sunny-sharp",
+      gradient: ["#ee9ca7","#ffdde1"]
+    },
+    Thunderstorm: {
+      iconName: "md-thunderstorm",
+      gradient: []
+    },
+    Drizzle: {
+      iconName: "rainy-sharp",
+      gradient: []
+    },
+    Rain: {
+      iconName: "umbrella-sharp",
+      gradient: []
+    },
+    Snow: {
+      iconName: "ios-snow",
+      gradient: []
+    },
+    Atmosphere: {
+      iconName: "ios-sunny-sharp",
+      gradient: []
+    },
+    Clear: {
+      iconName: "ios-sunny-sharp",
+      gradient: []
+    },
+    Clouds: {
+      iconName: "md-cloud",
+      gradient: []
+    },
+    Mist: {
+      iconName: "water",
+      gradient: []
+    },
+    Dust: {
+      iconName: "apps",
+      gradient: []
+    }
+  };
+
+export default function Weather({ temp, condition }){
     return (
-    <View style={styles.container}>
+    <LinearGradient
+    colors={weatherOptions["Haze"].gradient}
+    style={styles.container}>
+        <StatusBar barStyle="light-content" />
         <View style={styles.halfContainer}>
-            <Ionicons size={96} name="rainy" />
+            <Ionicons 
+                size={96}
+                name={weatherOptions["Haze"].iconName}
+                color="white" />
             <Text style={styles.temp} >{temp}℃</Text>
         </View>
         <View style={styles.halfContainer}>
             
         </View>
-    </View>
+    </LinearGradient>
     );
 }
 
@@ -31,7 +81,8 @@ const styles = StyleSheet.create({
     },
     temp: {
 
-        fontSize:36
+        fontSize:36,
+        color: "white"
     },
     halfContainer : {
         flex:1,
