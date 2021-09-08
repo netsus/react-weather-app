@@ -8,14 +8,14 @@ const weatherOptions = {
     Haze: {
       iconName: "md-partly-sunny-sharp",
       gradient: ["#ee9ca7","#ffdde1"],
-      title:"Haze",
-      subtitle:""
+      title:"안개",
+      subtitle:"살짝 습하겠습니다."
     },
     Thunderstorm: {
       iconName: "md-thunderstorm",
       gradient: ["#1D2B64","#0052D4"],
-      title:"Thunderstorm",
-      subtitle:""
+      title:"뇌우",
+      subtitle:"천둥을 동반한 비가 내립니다."
     },
     Drizzle: {
       iconName: "rainy-sharp",
@@ -26,44 +26,44 @@ const weatherOptions = {
     Rain: {
       iconName: "umbrella-sharp",
       gradient: ["#2c3e50","#3498db"],
-      title:"Rain",
-      subtitle:""
+      title:"비",
+      subtitle:"주륵주륵 비가 내려요"
     },
     Snow: {
       iconName: "ios-snow",
       gradient: ["#E0EAFC","#1D2B64"],
-      title:"Snow",
-      subtitle:""
+      title:"눈",
+      subtitle:"소복소복 쌓이는 흰 눈"
     },
     Atmosphere: {
       iconName: "ios-sunny-sharp",
       gradient: ["#83a4d4","#b6fbff"],
-      title:"Atmosphere",
-      subtitle:""
+      title:"청명",
+      subtitle:"청명한 날씨입니다."
     },
     Clear: {
       iconName: "ios-sunny-sharp",
       gradient: ["#6DD5FA","#fffc00","#E0EAFC"],
-      title:"Clear",
-      subtitle:""
+      title:"맑음",
+      subtitle:"맑고 푸른 하늘"
     },
     Clouds: {
       iconName: "md-cloud",
       gradient: ["#56CCF2","#E0EAFC","#2F80ED"],
-      title:"Clouds",
-      subtitle:""
+      title:"구름",
+      subtitle:"구름이 몽실 몽실"
     },
     Mist: {
       iconName: "water",
       gradient: ["#F8CDDA", "#1D2B64"],
-      title:"Mist",
-      subtitle:""
+      title:"습한 안개",
+      subtitle:"습도 높은 안개가 자욱 자욱"
     },
     Dust: {
       iconName: "apps",
       gradient: ["#304352","#d7d2cc"],
-      title:"Dust",
-      subtitle:""
+      title:"황사",
+      subtitle:"황사가 뿌옇게 왔어요"
     }
   };
 
