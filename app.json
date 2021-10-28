@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "React Native Weather Application",
+    "githubUrl": "https://github.com/netsus/react-weather-app"
   }
 }
